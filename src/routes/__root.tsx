@@ -85,6 +85,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Neelam" },
       { name: "robots", content: "index, follow" },
+      { name: "theme-color", content: "#2E7D57" },
+      { name: "msapplication-TileColor", content: "#2E7D57" },
+      { name: "msapplication-TileImage", content: "/mstile-150x150.png" },
+      { name: "msapplication-config", content: "/browserconfig.xml" },
+      { name: "application-name", content: "English with Neelam" },
+      { name: "apple-mobile-web-app-title", content: "EN Tuition" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "default" },
+      { name: "mobile-web-app-capable", content: "yes" },
       { property: "og:site_name", content: "Learn with Neelam" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
@@ -99,6 +108,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/46d14ded-565f-45f7-9035-b8c528708e8b/id-preview-0542f33f--979ef4d5-ecbd-4ee2-aa96-cc56f7b47c2b.lovable.app-1782585945450.png" },
     ],
     links: [
+      /* ── Favicon package ── */
+      { rel: "icon", href: "/favicon.ico", sizes: "32x32" },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+      { rel: "icon", type: "image/png", sizes: "48x48", href: "/favicon-48x48.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#2E7D57" },
+      { rel: "manifest", href: "/site.webmanifest" },
+      /* ── Fonts ── */
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
