@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
+import { SiteFooter } from "./SiteFooter";
 
 interface LegalLayoutProps {
   title: string;
@@ -53,24 +54,7 @@ export function LegalLayout({ title, lastUpdated, children }: LegalLayoutProps) 
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border bg-muted/30 py-10 mt-10">
-        <div className="mx-auto max-w-7xl px-6 flex flex-wrap items-center justify-between gap-6 text-sm text-muted-foreground">
-          <div>
-            <div className="font-display font-semibold text-foreground">Learn with Neelam</div>
-            <div className="mt-1">Roorkee, Uttarakhand, 247667</div>
-          </div>
-          <nav className="flex flex-wrap gap-4 text-xs">
-            <Link to="/privacy-policy" className="hover:text-foreground">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-foreground">Terms</Link>
-            <Link to="/disclaimer" className="hover:text-foreground">Disclaimer</Link>
-            <Link to="/cookie-policy" className="hover:text-foreground">Cookies</Link>
-            <Link to="/refund-policy" className="hover:text-foreground">Refund Policy</Link>
-            <Link to="/accessibility" className="hover:text-foreground">Accessibility</Link>
-          </nav>
-          <div className="text-xs">© 2026 English with Neelam</div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

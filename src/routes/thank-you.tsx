@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CheckCircle, ArrowRight, Phone, BookOpen, Star } from "lucide-react";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/thank-you")({
   head: () => ({
@@ -105,11 +106,7 @@ function ThankYouPage() {
         </div>
       </main>
 
-      <footer className="border-t border-border bg-muted/20 py-6">
-        <div className="mx-auto max-w-7xl px-6 text-center text-xs text-muted-foreground">
-          © 2026 English with Neelam · Roorkee, Uttarakhand
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Clock, Phone, ArrowRight, Bell } from "lucide-react";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/coming-soon")({
   head: () => ({
@@ -58,11 +59,7 @@ function ComingSoonPage() {
         </div>
       </main>
 
-      <footer className="border-t border-border bg-background/60 py-6">
-        <div className="mx-auto max-w-7xl px-6 text-center text-xs text-muted-foreground">
-          © 2026 English with Neelam · Roorkee, Uttarakhand
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

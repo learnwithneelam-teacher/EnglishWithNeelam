@@ -16,6 +16,7 @@ import {
   Users,
   Sparkles,
 } from "lucide-react";
+import { SiteFooter } from "@/components/SiteFooter";
 
 const WHATSAPP_URL =
   "https://wa.me/919971055356?text=Hi%20Neelam%20ma'am%2C%20I%27d%20like%20to%20enquire%20about%20classes%20for%20my%20child.";
@@ -1156,25 +1157,7 @@ function SuccessStoriesPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border bg-background py-10">
-        <div className="mx-auto max-w-7xl px-6 flex flex-wrap items-center justify-between gap-6 text-sm text-muted-foreground">
-          <div>
-            <div className="font-display font-semibold text-foreground">
-              Learn with Neelam
-            </div>
-            <div className="mt-1">Roorkee, Uttarakhand, 247667</div>
-          </div>
-          <nav className="flex flex-wrap gap-6">
-            <Link to="/" className="hover:text-foreground">Home</Link>
-            <Link to="/services" className="hover:text-foreground">Services</Link>
-            <Link to="/success-stories" className="hover:text-foreground">Success Stories</Link>
-            <Link to="/about" className="hover:text-foreground">About</Link>
-            <Link to="/contact" className="hover:text-foreground">Contact</Link>
-          </nav>
-          <div className="text-xs">© 2026 English with Neelam</div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
