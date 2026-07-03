@@ -330,8 +330,8 @@ function ServicesPage() {
             <Link to="/" className="hover:text-foreground">Home</Link>
             <a href="#services" className="hover:text-foreground">Services</a>
             <a href="#outcomes" className="hover:text-foreground">Outcomes</a>
+            <Link to="/success-stories" className="hover:text-foreground">Success Stories</Link>
             <a href="#about" className="hover:text-foreground">About</a>
-            <a href="#achievements" className="hover:text-foreground">Achievements</a>
             <a href="#contact" className="hover:text-foreground">Contact</a>
           </nav>
           <a
