@@ -1,0 +1,28 @@
+/* humans.txt — English with Neelam
+   https://humanstxt.org */
+
+/* TEAM */
+  Teacher & Owner: Neelam Yadav
+  Location: Roorkee, Uttarakhand, India
+  Contact: learnwithneelam.teacher@gmail.com
+  Phone: +91 99710 55356
+
+/* THANKS */
+  SNDK Public School, Roorkee — for years of teaching experience
+  Our students and their parents — for trusting us with their English learning journey
+
+/* SITE */
+  Language: English / Hindi
+  Doctype: HTML5
+  Framework: TanStack Start (React, Vite)
+  Styling: Tailwind CSS
+  Deployment: Netlify
+  Source: GitHub — github.com/learnwithneelam-teacher/EnglishWithNeelam
+
+/* STANDARDS */
+  Accessibility: WCAG 2.1 AA (in progress)
+  Structured Data: Schema.org JSON-LD
+  Performance: Optimised for mobile-first India (low-bandwidth friendly)
+
+/* LAST UPDATE */
+  2026/07/03

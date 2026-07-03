@@ -1,0 +1,15 @@
+# security.txt — English with Neelam
+# https://securitytxt.org (RFC 9116)
+
+Contact: mailto:learnwithneelam.teacher@gmail.com
+Contact: tel:+919971055356
+
+Preferred-Languages: en, hi
+
+Policy: https://englishwithneelam.in/privacy-policy
+
+# This is a small educational website. We take security seriously.
+# If you discover a security vulnerability, please contact us directly
+# and allow us reasonable time to address it before any public disclosure.
+
+Expires: 2027-07-03T00:00:00.000Z

@@ -14,22 +14,57 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+    <div className="flex min-h-screen flex-col bg-background text-foreground">
+      {/* Simple nav */}
+      <header className="border-b border-border/60 bg-background/80 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <Link to="/" className="font-display text-xl font-semibold tracking-tight">
+            Learn with <span className="text-primary">Neelam</span>
+          </Link>
+          <a href="tel:+919971055356" className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background">
+            +91 99710 55356
+          </a>
+        </div>
+      </header>
+
+      <main className="flex flex-1 flex-col items-center justify-center px-6 py-20 text-center">
+        <div className="font-display text-8xl font-bold text-primary/20 select-none">404</div>
+        <h1 className="font-display mt-2 text-3xl font-semibold text-foreground">Page Not Found</h1>
+        <p className="mt-3 max-w-md text-sm text-muted-foreground leading-relaxed">
+          The page you're looking for doesn't exist or may have moved. Try one of the popular pages below.
         </p>
-        <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Go home
+
+        {/* Popular pages */}
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 max-w-lg w-full">
+          {[
+            { label: "Home", href: "/" },
+            { label: "Services", href: "/services" },
+            { label: "Success Stories", href: "/success-stories" },
+            { label: "FAQ", href: "/faq" },
+            { label: "Testimonials", href: "/testimonials" },
+            { label: "Contact", href: "/contact" },
+          ].map((p) => (
+            <Link key={p.href} to={p.href}
+              className="rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground hover:border-primary/40 hover:bg-secondary transition-colors">
+              {p.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-8">
+          <Link to="/"
+            className="inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-primary-foreground"
+            style={{ backgroundImage: "var(--gradient-primary)" }}>
+            Go to Home Page
           </Link>
         </div>
-      </div>
+      </main>
+
+      <footer className="border-t border-border bg-muted/20 py-6">
+        <div className="mx-auto max-w-7xl px-6 text-center text-xs text-muted-foreground">
+          © 2026 English with Neelam · Roorkee, Uttarakhand
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,2 +1,51 @@
+# robots.txt — English with Neelam
+# https://englishwithneelam.in/robots.txt
+# Last updated: 2026-07-03
+
 User-agent: *
 Allow: /
+
+# Block utility/noindex pages from crawling
+Disallow: /thank-you
+Disallow: /coming-soon
+
+# Block any admin or API paths
+Disallow: /api/
+Disallow: /_/
+
+# Allow all crawlable assets
+Allow: /Images/
+Allow: /favicon.svg
+Allow: /site.webmanifest
+
+# AI crawlers — allow for helpful AI-powered search
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Block known bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://englishwithneelam.in/sitemap.xml
