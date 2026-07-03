@@ -123,7 +123,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           priceRange: "₹₹",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "House No. 155, B Block, Shivaji Colony",
             addressLocality: "Roorkee",
             addressRegion: "Uttarakhand",
             postalCode: "247667",

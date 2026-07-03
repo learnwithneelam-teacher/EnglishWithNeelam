@@ -113,7 +113,7 @@ function ContactPage() {
           <MapPin className="mt-1 size-5 text-primary" />
           <div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground">Location</div>
-            <div className="text-sm">Roorkee, Uttarakhand, India</div>
+            <div className="text-sm">Roorkee, Uttarakhand, 247667</div>
           </div>
         </address>
       </div>

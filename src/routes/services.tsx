@@ -292,7 +292,7 @@ const faqs = [
   },
   {
     q: "Where in Roorkee are you located?",
-    a: "Home tuition is offered from House No. 155, B Block, Shivaji Colony, Roorkee – 247667, Uttarakhand. Online classes are available anywhere in India.",
+    a: "Home tuition is offered in Roorkee, Uttarakhand – 247667. Online classes are available anywhere in India.",
   },
 ];
 
@@ -967,7 +967,7 @@ function ServicesPage() {
                 <ContactRow
                   icon={MapPin}
                   title="Location"
-                  value="House No. 155, B Block, Shivaji Colony, Roorkee – 247667, Uttarakhand"
+                  value="Roorkee, Uttarakhand – 247667"
                 />
                 <ContactRow
                   icon={Phone}
